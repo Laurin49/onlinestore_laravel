@@ -27,3 +27,4 @@ Route::get('/products', [ProductController::class, 'index'])->name('product.inde
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');
 Route::get('/admin', [AdminHomeController::class, 'index'])->name('admin.home.index');
 Route::get('/admin/products', [AdminProductController::class, 'index'])->name('admin.product.index');
+Route::post('admin/products/store', [AdminProductController::class, 'store'])->name('admin.product.store');
